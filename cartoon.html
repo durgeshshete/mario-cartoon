@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mario cartoon example</title>
+    <style>
+        *{
+           margin: 0px;
+           padding: 0px;
+        }
+        .mback{
+            width: 100%;
+            height: 100vh;
+            background-size: 100%100%;
+            background-position: center;
+            background-image: url("https://wallpapercave.com/wp/nEWKGYX.jpg");
+        }
+        @keyframes demo{
+            0%{left:0px;}
+           
+            100%{left:90%;}
+        }
+        .mcartoon
+        {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top: 70%;
+            background-image: url("https://media2.giphy.com/media/eguY4RELq7s6wHoEM0/giphy.gif?cid=ecf05e47cbgng27pjrmmcgf1bbtv432lcn239qqrdn9z9z17&rid=giphy.gif&ct=s");
+            background-size: 100px 100px;
+            animation-name:demo;
+            animation-duration: 15s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+    </style>
+</head>
+<body>
+    <div class="mback">
+        <div class="mcartoon">
+        </div>
+    </div>
+</body>
+</html>
